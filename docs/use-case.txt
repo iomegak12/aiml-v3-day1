@@ -1,0 +1,50 @@
+Fictional Networking Vendor: NetCore
+Application Name: TAC Desk
+
+TAC Desk handles 2000+ escalated support tickets every year across 3 different regions
+AMER
+EMEA
+APJC
+
+Every ticket follows the lifecycle
+OPEN -> TRIAGE -> DIAGNOSE -> FIX -> VERIFY -> CLOSE -> RCA
+
+The problem
+Leadership keeps hearing the same complaints
+Customers - Your’ ETAs are meaningless, you said four hours - but it look 2 days
+Account Managers - I find about SLA breaches after the customer has already escalated to our VP
+Duty Managers - I can’t tell which tickets in the queue will turn into LONG RUNNING ONE, so I can’t staff the shifts properly
+
+Today, ETA come from a fixed value | rule
+S1 - 4 Hours
+S2 - 1 Day
+S3 - 2 Days
+S4 - 3 Days
+
+The business question
+When a ticket is triaged, can we predict how many hours it will take to resolve?
+
+Business Metrics already leadership team tracks
+MTTR (Mean time to resolve) - Average Resolution Hours
+SLA Breach Rate
+Tickets Volume | Backlog
+
+Common Data Structure
+Ticket ID
+Created At
+Product Family
+Severity
+Customer Tier
+Region
+Channel
+Devices Affected
+Software Version in Months
+Prior Ticket in 90 Days
+Engineer Experience in Years
+First Response in Minutes
+Customer Comments
+Escalation Count
+Reopened
+Resolution Code
+SLA Breached Or Not
+Resolution in Hours
