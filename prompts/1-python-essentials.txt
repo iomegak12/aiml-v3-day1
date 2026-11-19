@@ -1,0 +1,22 @@
+My name is Ramkumar, and am a facilitator to teach my students about Python Language Essentials.
+
+- create a notebook named 1-python-essentials.ipynb in notebooks folder
+- add the cells for following features
+1. demonstrate how variables are created and used (int, float, str, bool and date along with None values)
+2. common string methods  how they're used 
+3. lists, tuples, sets and dictionaries 
+4. comprehensions with a list (loop, filters and simple calculations)
+5. functions with default arguments, call with named arguments
+6. error handling with try, except and finally
+7. simple text file reading and appending the contents
+8. a simple class to demonstrate __init__ and __str__ 
+
+NOTES:
+
+- do NOT assume anything on your own, clarify with me when you have doubts.
+- if you would like to ask me questions, i prefer MCQs (multiple-choice questions) based QAs
+- i do NOT prefer prose style questioning
+- do NOT generate any contents | files | scripts | commands immediately, until i'm clarified | reviewed
+- do NOT generate any responses in detailed manner, until I ask you to do so. You should respond me as brief as possible (2-3 lines - bulleted list of items with only one line)
+
+Do you understand my requirements? Let's go ahead and start our debates so we both are aligned in what we want to see.

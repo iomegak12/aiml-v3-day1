@@ -1,0 +1,37 @@
+Scenario: Refer the file docs\use-case.txt
+
+NetCore TAC Desk - a Network Vendors' support team wants to predict, as triage, how many hours a ticket will take to resolve, instead of using fixed ETAs.
+
+Create a notebook named 02-tac-dataset.ipynb in notebooks folder, that generates a synthetic dataset of 2500 support tickets (random seed value can be set to 64) and saves it as data\tac_tickets.csv at the workspace root folder. Add a short markdown note before each cell.
+
+Columns:
+
+Ticket ID (ticket_id)
+Created At (created_at) - 2024-2025 records
+Product Family
+Severity
+Customer Tier
+Region
+Channel
+Devices Affected
+Software Version in Months
+Prior Ticket in 90 Days
+Engineer Experience in Years
+First Response in Minutes
+Customer Comments
+Escalation Count
+Reopened
+Resolution Code
+SLA Breached Or Not
+Resolution in Hours
+
+NOTES:
+
+- Make the data realistic
+- resolution hours rises with more devices, escalations, reopens, older software and less experienced engineers
+- sla breached is TRUE when resolution hours exceeds the fixed ETA for it's severity
+- add about 2% missing values in first response minutes
+
+finish by printing the shape and the first 5 rows.
+
+Do you understand my requirements to seed data generation? Let's have a quick MCQs based QAs so we both are aligned.

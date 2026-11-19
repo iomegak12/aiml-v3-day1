@@ -1,0 +1,19 @@
+Goal:
+
+Use NumPy on NetCore TAC desk tickets generated in data folder, to see how far the fixed ETAs (S1=4 Hours, S2=24 Hours, S3=48 Hours, S3=72 Hours) are from actual resolution hours.
+
+Create a notebook in notebooks folder named 3-numpy.ipynb.
+
+NOTES:
+- Use Only NumPy
+- Add a Short markdown note before each cell, and explain each result what it means for the business.
+- Demonstrate the following capabilities
+	a. load the numeric columns from the dataset (tac_tickets.csv) with numpy generate from text (convert severity s1-s4 to 1-4)
+	b. array properties (ndim, shape, size and data types)
+	c. indexing, slicing and Boolean masks (for example, all S1 tickets, tickets over 72 hours)
+	d. vectorized operations (baseline ETA per ticket via fancy indexing, and error = actual - ETA)
+	e. aggregation (mean - MTTR, median, percentiles, MTTR by severity, SLA breach rate)
+	f. baseline MAE in hours (the number our future ML model must beat)
+	g. reshape and stacking into a feature matrix and speed comparison against a simple python loop.
+
+Do you get my requirements related to numpy operations? would you like to ask any questions?
