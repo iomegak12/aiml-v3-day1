@@ -1,0 +1,85 @@
+ML Foundations
+
+AI vs. ML vs. DL vs. GenAI vs. Agentic AI - AI Evolution
+
+What is ML and Why does it matter?
+
+Traditional Programming = Rules + Input => Output (Answers)
+In ML, Input + Answers = Program which has rules learnt from the data
+Data Driven Learning (Understanding and Identifying rules that make data points related)
+The learnt rules are then called a MODEL
+Once trained, the model can make predictions for new data it has never seen
+A model can only learn patterns | relationships | how data points are correlated that are actually in the data, and it learns the mistakes and biases in that data as well
+ML turns history -> decisions
+
+ML Lifecycle
+
+Problem Framing
+Data (Role: Data Engineer)
+Collecting
+Understanding (EDA)
+Cleaning (Data Engineering) - DQ
+Feature Engineering (Features and Labels) (Data Analyst / ML Developer)
+Modeling (ML Engineer)
+Choosing an Algorithm & Training it on Historical Examples
+Evaluation
+Packaging & Deployment
+Monitoring 
+Continuous Learning
+
+Types of ML
+3 Main Types of ML
+What kind of feedback the model learns from
+Supervised Learning
+Learning from labelled examples
+Unsupervised Learning
+Finds structure on its own, such as groups of similar records
+Works with the data that has no labels
+Reinforcement Learning
+Learns by trial and error
+An agent takes actions, receives rewards and penalties
+
+
+Supervised Learning
+
+It has two main problem types
+Difference is simply what kind of answer we predict
+Regression
+Predicts a number on a continuous scale
+Classification
+Predicts a category
+Yes / No
+One of several labels
+The type decides which algorithms and which evaluation metrics are relevant
+
+From Business Problem to ML Problem
+
+Decide the Target
+What exactly are we predicting?
+How are they measured?
+At what moment in time?
+Decide the Features
+Which pieces of information are actually available at the moment we need to make the prediction?
+Understand the Data Types
+Numeric Columns
+Categorical Columns
+Understand the structure of the data
+Structured Data fits into a table
+Unstructured Data (comments, logs, screenshots) needs extra processing before model learns from the data
+Agree on Business Metric
+
+
+Train, Validation and Test Split - Data Leakage
+
+Training set is what the model learns from
+Validation Set is used while we tune and compare models
+Test set is kept locked away and used once, at the very end, to estimate real-world performance
+
+Common split - 70:15:15 / 80:10:10
+
+Data Leakage happens when information that would NOT be available at prediction time sneaked into the training data. It often hides in columns that are filled in after the event we’re predicting, or in pre-processing steps that look at the whole dataset before it’s split.
+
+Scikit-Learn
+
+It’s an open-source / community driven standard python library for classical ML, and almost every model in it follows the same pattern
+You create a model object, call fit with the training features and target, call predict on new features and then measure the error
